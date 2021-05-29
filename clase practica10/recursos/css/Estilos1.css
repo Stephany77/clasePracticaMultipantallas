@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    background-color: rgb(246, 246, 248);
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 35px;
+}
+#Menu {
+    width: 80%;
+    padding: 0%;
+    margin: 0%;
+}
+
+#Menu ul {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;    
+    align-content: center;
+    width: 100%;
+}
+
+#Menu ul li{
+    list-style: none;
+    margin: 10px auto;
+}
+
+
+.btn-Toggle {
+    display: none;
+}
+
+body{
+    background: url('../imagenes/banner.jpeg') no-repeat;
+    background-size: cover;
+}
+
+/* Categorias de Menu**/
+#categ{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#categ article{
+    background-color: rgb(241, 201, 201);
+    box-sizing: border-box;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+#categ article h2{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
+
+/*Platillos*/
+
+#Platos{
+    background-color: rgba(233, 184, 120, 0.808);
+    border-radius: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#Platos section{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+#Platos section img{
+    height: 125px;
+    width: 160px;
+}
+
+#Platos section article{
+    display: flex;
+    flex-direction: row;
+}
+
+#Platos section article p{
+    text-align: center;
+}
+#platos{
+    text-align: center;
+}
+
+.dish{
+    background-color: rgba(211, 143, 218, 0.63);
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.dish img {
+    width: 150px;
+    height: 100px;
+}
+/*Contactos*/
+
+#infoContactos{
+    display: block;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: rgb(223, 106, 106);
+    text-align: center;
+}
+
+
+/* Definiendo los media queries para dispositivos Medianos*/
+@media only screen and (max-width: 760px){
+    body{
+        background: rgba(241, 114, 9, 0.849);
+    }
+
+    /* Coloco miMenu Verticalmente*/
+    header{
+        height: 100%;
+    }
+
+    #Menu{
+        background-color: rgb(159, 189, 245);
+    }
+
+    #Menu ul{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .btn-Toggle{
+        display: block;
+    }
+
+    #categ article p{
+        display: none;
+    }
+
+    #Platos section img{
+        display: none;
+    }
+
+    #infoContactos{
+        display: block;
+        flex-direction: ro;
+        flex-wrap: wrap;
+        background-color: indianred;
+    }
+}
+
+
+/* media queries para pantallas pequeñas*/
+@media all and (max-width: 600px){
+    body {
+        background: rgba(5, 5, 90, 0.911);
+    }
+
+    /* Coloco miMenu Verticalmente*/
+    #Menu{
+        background-color: cornflowerblue;
+    }
+
+    header{
+        flex-direction: column;
+        height: 100%;
+    }
+    #Menu ul{
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .btn-Toggle{
+        display: block;
+    }
+
+    /** Slider de Imagenes**/
+    #sliderImg{
+        display: none;
+    }
+
+    #Platos section img{
+        display: none;
+    }
+
+    #Platos section h1{
+        font-size: small;
+    }
+   
+    #Platos section figcaption{
+        display: none;
+    }
+    
+    #infoContactos iframe{
+        display: none;
+    }
+    
+
+}
+
+/********/
+@media only screen and (max-width: 600px) and (orientation: landscape){
+    body{
+        background: rgb(220, 137, 231)
+    }
+}
